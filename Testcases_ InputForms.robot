@@ -1,13 +1,13 @@
 *** Settings ***
 Documentation    Switching between Browser Windows in Robot Framework
 Library     SeleniumLibrary
-Resource    Variables.robot
+Resource    Variables_InputForms.robot
 Resource    Keyword.robot
 
 *** Test Cases ***
 TestCases_01 : Simple Form Demo
     GoToWeb
-    Wait Until Element Contains    //*[@id="site-name"]/a    Selenium Easy
+    SeleniumEasy
     Click Element    ${InputForms}
     Click Element    ${SimpleFormDemo}
 
@@ -27,7 +27,7 @@ TestCases_01 : Simple Form Demo
 
 TestCases_02 : Checkbox Demo
     GoToWeb
-    Wait Until Element Contains    //*[@id="site-name"]/a    Selenium Easy
+    SeleniumEasy
     Click Element    ${InputForms}
     Click Element    ${CheckboxDemo}
 
@@ -55,7 +55,7 @@ TestCases_02 : Checkbox Demo
 
 TestCases_03 : RadioButton Demo
     GoToWeb
-    Wait Until Element Contains    //*[@id="site-name"]/a    Selenium Easy
+    SeleniumEasy
     Click Element    ${InputForms}
     Click Element    ${RadioButtonDemo}    
 
@@ -80,7 +80,7 @@ TestCases_03 : RadioButton Demo
 
 TestCases_04 : SelectDropdownList Demo
     GoToWeb
-    Wait Until Element Contains    //*[@id="site-name"]/a    Selenium Easy
+    SeleniumEasy
     Click Element    ${InputForms}
     Click Element    ${SelectDropdownList}
     
@@ -108,7 +108,7 @@ TestCases_04 : SelectDropdownList Demo
 
 TestCase_05 : Input Form Submit
     GoToWeb
-    Wait Until Element Contains    //*[@id="site-name"]/a    Selenium Easy
+    SeleniumEasy
     Click Element    ${InputForms}
     Click Element    ${InputFormSubmit}
 
@@ -128,7 +128,7 @@ TestCase_05 : Input Form Submit
 
 TestCase_06 : Ajax Form Submit
     GoToWeb
-    Wait Until Element Contains    //*[@id="site-name"]/a    Selenium Easy
+    SeleniumEasy
     Click Element    ${InputForms}
     Click Element    ${AjaxFormSubmit}   
 
@@ -140,7 +140,7 @@ TestCase_06 : Ajax Form Submit
 
 Testcase_07 : JQuery Select dropdown
     GoToWeb
-    Wait Until Element Contains    //*[@id="site-name"]/a    Selenium Easy
+    SeleniumEasy
     Click Element    ${InputForms}
     Click Element    ${JQuerySelectdropdown}
 
